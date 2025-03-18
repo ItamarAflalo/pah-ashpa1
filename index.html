@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,83 +7,57 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #3498db;
-            color: #fff;
             text-align: center;
-            padding: 2rem 0;
+            padding: 20px;
         }
-        main {
-            width: 80%;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .container {
+            background: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #3498db;
+        h1 {
+            color: #2c3e50;
         }
-        .tableauPlaceholder {
-            width: 100%;
-            height: 600px;
+        h2 {
+            color: #2980b9;
+        }
+        p {
+            color: #555;
         }
         .button {
-            background-color: #3498db;
-            color: #fff;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
             display: inline-block;
-            margin-top: 1rem;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
         .button:hover {
             background-color: #2980b9;
         }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
+        .tableau-container {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>הוויזואליזציה הראשונה שלי</h1>
-    </header>
-    <main>
-        <section>
-            <h2>פרויקט שאפתני ב-Tableau</h2>
-            <p>זהו הפרויקט הראשון שלי ב-Tableau, שבו חקרתי נתוני מכירות של חברת "אלקטרוניקה בע"מ".</p>
-            <p>הדשבורד מציג ניתוח מפורט של ביצועי המכירות לפי אזורים, קטגוריות מוצרים וזמנים.</p>
-            <a href="#tableau-viz" class="button">צפייה בדשבורד</a>
-        </section>
-
-        <section>
-            <h2>נתוני מכירות עיקריים</h2>
-            <ul>
-                <li><strong>סך מכירות:</strong> ₪1,500,000</li>
-                <li><strong>אזורים מצליחים:</strong> מרכז וצפון</li>
-                <li><strong>קטגוריות מוצרים מובילות:</strong> מחשבים וטלפונים חכמים</li>
-            </ul>
-        </section>
-
-        <section id="tableau-viz">
-            <h2>דשבורד Tableau</h2>
-            <iframe src="https://public.tableau.com/views/Book1_17411175646800/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"allowfullscreen></iframe>
-        </section>
-
-        <section>
-            <h2>מסקנות וצעדים הבאים</h2>
-            <p>מהניתוח עולה כי יש פוטנציאל להרחבת המכירות באזור הדרום ולקדם מוצרים בקטגוריות פחות מצליחות.</p>
-            <p>בשלב הבא, אבחן את מגמות המכירות לאורך זמן ואבצע ניתוח מעמיק יותר של נתוני הלקוחות.</p>
-        </section>
-    </main>
+        <h2>פרוייקט שאפתני ב-Tableau</h2>
+        <p>ברוכים הבאים! זהו הפרויקט הראשון שלי בתחום הוויזואליזציה של נתונים באמצעות Tableau. מטרת הפרויקט היא להציג נתונים בצורה ברורה, אינטראקטיבית ומובנת.</p>
+        
+        <a class="button" href="#tableau">לצפייה בדשבורד</a>
+        <a class="button" href="https://public.tableau.com/views/Book1_17411175646800/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">פתיחה ב-Tableau</a>
+        
+        <div class="tableau-container" id="tableau">
+            <h2>הדשבורד שלי</h2>
+            <iframe src="https://public.tableau.com/views/Book1_17411175646800/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" width="100%" height="600px" frameborder="0"></iframe>
+        </div>
+    </div>
 </body>
 </html>
