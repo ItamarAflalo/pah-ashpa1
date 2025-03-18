@@ -44,19 +44,26 @@
             margin-top: 20px;
         }
     </style>
+    <!-- הטמעת ספריית Embedding API v3 -->
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>הוויזואליזציה הראשונה שלי</h1>
-        <h2>פרוייקט שאפתני ב-Tableau</h2>
+        <h2>פרויקט שאפתני ב-Tableau</h2>
         <p>ברוכים הבאים! זהו הפרויקט הראשון שלי בתחום הוויזואליזציה של נתונים באמצעות Tableau. מטרת הפרויקט היא להציג נתונים בצורה ברורה, אינטראקטיבית ומובנת.</p>
         
         <a class="button" href="#tableau">לצפייה בדשבורד</a>
-        <a class="button" href="https://public.tableau.com/views/Book1_17411175646800/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">פתיחה ב-Tableau</a>
+        <a class="button" href="https://public.tableau.com/views/Book1_17411175646800/Dashboard1" target="_blank">פתיחה ב-Tableau</a>
         
         <div class="tableau-container" id="tableau">
             <h2>הדשבורד שלי</h2>
-            <iframe src="https://public.tableau.com/views/Book1_17411175646800/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" width="100%" height="600px" frameborder="0"></iframe>
+            <!-- הטמעת הדשבורד באמצעות tableau-viz -->
+            <tableau-viz id="tableauViz"
+                         src="https://public.tableau.com/views/Book1_17411175646800/Dashboard1"
+                         width="100%"
+                         height="600px">
+            </tableau-viz>
         </div>
     </div>
 </body>
